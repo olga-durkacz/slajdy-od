@@ -1,0 +1,497 @@
+body
+{
+	text-align: center;
+	background-color: lightgray;
+	counter-reset: slide;
+	--hcolor:#e74c3cff ;
+	--fcolor:#bdc3c7ff;
+	--bcolor:white;
+}
+
+section 
+{
+position: relative;
+}
+
+/* KOLORY
+
+czerwony:#e74c3cff ;
+szary:#bdc3c7ff;
+
+ciemnyturkus:#2c3e50ff;
+turkus:#1abc9cff;
+
+*/
+
+/* ------ PIERWSZY SLAJD ------*/
+
+.pierwszy
+{
+	
+	background-color: var(--bcolor);
+	 display: grid;
+  		grid-template-columns:auto;
+  		grid-template-rows: 8rem 30rem 4rem ;
+}
+
+
+
+/*==== STYL NAGŁÓWKA ====*/
+
+header.slajd
+{
+	
+	width: 95%;
+	height: 50%;
+	align-self:center;
+	border: 1px solid black;
+
+}
+
+header.tlo
+{
+	display: inline-flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 10px;
+	margin-right: 30px;
+	background-color: var(--hcolor);
+
+	 grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.slajd1body
+{
+
+	display: flex;
+	justify-content: space-around;
+	margin: 10px;
+	border: 1px solid black;
+	margin-bottom: 10px;
+	grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+
+.slajd1bodyh
+{
+	margin: 10px;
+	width: 80%;
+	height: 20%;
+	border: 1px solid black;
+}
+
+/* ==== STYL STÓPKI ====*/
+
+
+.stopka
+{
+	display: flex;
+	justify-content: space-between;
+	align-items:flex-end;
+	flex-direction: row;
+	
+	
+	grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+.numer
+{
+	margin-left: 20px;
+     height: 100%;
+     width: 7%;
+     background-color: var(--hcolor);
+     text-align: center;
+     font-size: 50px;
+     color: var(--bcolor);
+}
+
+.numer:after
+{
+	counter-increment: slide;
+content: counter(slide);
+
+}
+
+.szary
+{
+    height: 100%;
+     width: 60%;
+     background-color: var(--fcolor);
+}
+
+.czerwony
+{
+height: 100%;
+     width: 20%;
+     background-color: var(--hcolor);
+}
+
+/* ------ DRUGI SLAJD ------*/
+
+
+.drugi
+{
+	margin: 10px;
+	 display: grid;
+  		grid-template-columns:auto;
+  		grid-template-rows: 8rem 30rem 4rem;
+	background-color: var(--bcolor);
+	
+}
+
+.slajd2body
+{
+
+	
+	border: 1px solid black;
+	margin: 10px;
+	grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+
+/* ------ TRZECI SLAJD ------*/
+
+.trzeci
+{
+	margin: 10px;
+	 display: grid;
+  		grid-template-columns:auto auto;
+  		grid-template-rows: 8rem 30rem 4rem;
+	background-color: var(--bcolor);
+	
+}
+
+.tlo2
+{
+	display: inline-flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 10px;
+	margin-right: 30px;
+	background-color: var(--hcolor);
+	grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+
+.kafelek1
+{
+ 
+ 	margin: 10px;
+  	border: 1px solid black;
+  	grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.kafelek2
+{
+ 	margin: 10px;
+  	border: 1px solid black;
+  	grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+
+.stopka2
+{
+	display: flex;
+	justify-content: space-between;
+	align-items:flex-end;
+	flex-direction: row;
+
+	grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+
+/* ------ CZWARTY SLAJD ------*/
+
+.czwarty
+{
+	margin: 10px;
+	 display: grid;
+  		grid-template-columns:auto auto;
+  		grid-template-rows: 8rem 15rem 15rem 4rem;
+	background-color: var(--bcolor);
+	
+}
+
+.tlo3
+{
+	display: inline-flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 10px;
+	margin-right: 30px;
+	background-color: var(--hcolor);
+	grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+
+
+.czesc1
+{
+	margin: 10px;
+	grid-column: 1; 
+    grid-row-start: 2; 
+    grid-row-end: 2;
+	border: 1px solid black;
+}
+
+.czesc2
+{
+	margin: 10px;
+	grid-column: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+	border: 1px solid black;
+	
+}
+
+.wiersz
+{
+	margin: 10px;
+	grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+	border: 1px solid black;
+}
+.stopka3
+{
+	display: flex;
+	justify-content: space-between;
+	align-items:flex-end;
+	flex-direction: row;
+
+	grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4;
+}
+
+
+/* ------ PIATY SLAJD ------*/
+
+.piaty
+{
+	margin: 10px;
+	 display: grid;
+  		grid-template-columns:auto;
+  		grid-template-rows: 15rem 7rem 4rem 15rem;
+	background-color: var(--bcolor);
+	
+}
+
+
+header.tytul
+{
+	
+	margin: 10px;
+	
+	grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+
+	border: 1px solid black;
+
+}
+
+header.podtytul
+{
+	margin: 10px;
+	margin-right: 20px;
+	margin-left: 20px;
+	grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+	border: 1px solid black;
+
+}
+
+.wstep
+{
+	grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 4;
+    grid-row-end: 4;
+	background-color: var(--hcolor);
+	
+	color: var(--hcolor);
+}
+
+.wstep:after
+{
+	counter-increment: slide;
+content: counter(slide);
+
+}
+
+
+
+/* ------ SZOSTY SLAJD ------*/
+
+.szosty
+{
+	margin: 10px;
+	 display: grid;
+  		grid-template-columns:auto auto;
+  		grid-template-rows: 8rem 15rem 15rem 4rem;
+	background-color: var(--bcolor);
+	
+}
+
+
+
+
+.bocznykafelek
+{
+	margin: 10px;
+	grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+	border: 1px solid black;
+}
+
+.bocznykafelek2
+{
+	margin: 10px;
+	grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+	border: 1px solid black;
+}
+
+.kolumna2
+{
+	margin: 5px;
+	grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+	border: 1px solid black;
+}
+
+
+
+
+
+/* ------ SIODMY SLAJD ------*/
+
+.siodmy
+{
+	margin: 10px;
+	 display: grid;
+  		grid-template-columns:auto auto;
+  		grid-template-rows: 8rem 15rem 15rem 4rem;
+	background-color: var(--bcolor);
+	
+}
+
+.bocznykafelek3
+{
+	margin: 10px;
+	grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+	border: 1px solid black;
+}
+
+.bocznykafelek4
+{
+	margin: 10px;
+	grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+	border: 1px solid black;
+}
+
+.kolumna4
+{
+	margin: 5px;
+	grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 4;
+	border: 1px solid black;
+}
+
+
+/* ------ OSMY SLAJD ------*/
+.osmy
+{
+	margin: 10px;
+	 display: grid;
+  		grid-template-columns:auto;
+  		grid-template-rows: 8rem 15rem 15rem 4rem;
+	background-color: var(--bcolor);
+	
+}
+
+
+.kafelek3
+{
+
+  	grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  	border: 1px solid black;
+  	margin: 5px;
+}
+
+.kafelek4
+{
+
+  	grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+  border: 1px solid black;
+  margin: 5px;
+}
+
+.stopka4
+{
+	display: flex;
+	justify-content: space-between;
+	align-items:flex-end;
+	flex-direction: row;
+
+	grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 4;
+    grid-row-end: 4;
+}
+
+
+
